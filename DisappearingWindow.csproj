@@ -8,7 +8,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PlatformTarget>x86</PlatformTarget>
 		<PackageId>DisappearingWindow</PackageId>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Authors>Шутов Андрей Александрович</Authors>
 		<Description>Окно FluentWindow (WPF), которое отображает сообщение и закрывается автоматически через заданное время</Description>
 		<PackageTags>wpf, wpfui, nuget</PackageTags>

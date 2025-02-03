@@ -1,5 +1,6 @@
 ﻿using DisappearingWindow.ViewModel;
 using Microsoft.Extensions.DependencyInjection;
+using System.Windows;
 using Wpf.Ui.Controls;
 
 namespace DisappearingWindow.View
@@ -19,12 +20,22 @@ namespace DisappearingWindow.View
 
         public async Task Init(string message, int size, int time)
         {
-            ViewModel.Message = message;
-            ViewModel.Size = size;
-            Show();
-            await Task.Delay(time);
-            Close();
-            return;
+            try
+            {
+                await Application.Current.Dispatcher.BeginInvoke(new Action(async () =>
+                {
+                    ViewModel.Message = message;
+                    ViewModel.Size = size;
+                    Show();
+                    await Task.Delay(time);
+                    Close();
+                }));
+                return;
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }
