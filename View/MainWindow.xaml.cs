@@ -17,9 +17,10 @@ namespace DisappearingWindow.View
             InitializeComponent();
         }
 
-        public async Task Init(string message, int time)
+        public async Task Init(string message, int size, int time)
         {
             ViewModel.Message = message;
+            ViewModel.Size = size;
             Show();
             await Task.Delay(time);
             Close();

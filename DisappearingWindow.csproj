@@ -8,11 +8,12 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<PackageId>DisappearingWindow</PackageId>
-		<Version>1.0.2</Version>
+		<Version>1.0.4</Version>
 		<Authors>Шутов Андрей Александрович</Authors>
 		<Description>Окно FluentWindow (WPF), которое отображает сообщение и закрывается автоматически через заданное время</Description>
 		<PackageTags>wpf, wpfui, nuget</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/tailsghost/DisappearingWindow</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -10,5 +10,5 @@ internal partial class MainViewModel
     private string _message;
 
     [ObservableProperty]
-    private string _title = "Исчезающее окно";
+    private int _size = 16;
 }

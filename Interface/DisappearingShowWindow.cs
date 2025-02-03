@@ -11,13 +11,13 @@ public class DisappearingShowWindow
         _mainWindow = App.GetService<MainWindow>();
     }
 
-    public void Show(string message, int time)
+    public void Show(string message, int size, int time)
     {
-         _mainWindow.Init(message, time);
+         _mainWindow.Init(message,size, time);
     }
 
-    public async Task ShowAsync(string message, int time)
+    public async Task ShowAsync(string message, int size, int time)
     {
-        await _mainWindow.Init(message, time);
+        await _mainWindow.Init(message,size, time);
     }
 }
